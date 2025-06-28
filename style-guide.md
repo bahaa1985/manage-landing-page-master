@@ -13,7 +13,7 @@ The designs were created to the following widths:
 
 ### Primary
 
-Bright Red: hsl(12, 88%, 59%)
+Bright Red: hsl(12, 88%, 59%) #f25fa3
 Dark Blue: hsl(228, 39%, 23%)
 
 ### Neutral

@@ -93,3 +93,41 @@ youtubeIcon.addEventListener('mouseover',(e)=>{
 youtubeIcon.addEventListener('mouseout',(e)=>{
     e.target.src= './images/icon-youtube.svg';
 });
+
+//validate email input
+const emailInput = document.getElementById('emailInput');
+const goButton = document.getElementById('goButton');
+
+goButton.addEventListener('click', () => {
+    const emailValue = emailInput.value;
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
+    
+    if (isValidEmail) {
+        emailInput.style.color = '#9095a7';
+        document.getElementById('emailError').classList.add('hidden');
+        emailInput.value = ''; // Clear the input field after successful submission
+    } else {
+        emailInput.style.color = 'red';
+        document.getElementById('emailError').classList.remove('hidden');
+    }
+});
+
+emailInput.addEventListener('input', (e) => {
+     const emailValue = e.target.value;
+     if(emailValue === ''){
+         emailInput.style.color = '#9095a7';
+         document.getElementById('emailError').classList.add('hidden');}
+})
+
+const hamburgerIcon = document.getElementById('hamburgerIcon');
+hamburgerIcon.src = './images/icon-hamburger.svg'; // Set initial icon
+// Toggle menu visibility and change icon on click
+const menu = document.getElementById('menu');
+hamburgerIcon.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    if(hamburgerIcon.getAttribute('src') === './images/icon-hamburger.svg') {
+        hamburgerIcon.setAttribute('src','./images/icon-close.svg');
+    } else {
+        hamburgerIcon.setAttribute('src','./images/icon-hamburger.svg');
+    }
+});

@@ -16,10 +16,15 @@
   </style>
 </head>
 <body class="w-full h-full font-[Be_Vietnam_Pro]">
-  <nav class="absolute top-6 left-[10%] w-[80%] h-16 md:flex flex-row justify-between items-center" >
+  <!-- bg-tablet-pattern -->
+  <img src="./images/bg-tablet-pattern.svg" class="absolute -top-[20%] left-[20%] md:left-[25%] z-10"/>
+
+  <nav class="absolute top-6 left-[5%] md:left-[10%] w-[90%] md:w-[80%] h-16 flex flex-row justify-between items-center z-20" >
     <!-- logo and links -->
-    <div class="w-[70%] flex flex-row justify-between items-center">
-      <img src="./images/logo.svg" alt="Manage Logo"/>
+    <div>
+    <img src="./images/logo.svg" alt="Manage Logo" class="w-36 h-5"/>
+    </div>
+    <div class="w-[70%] flex flex-row justify-center items-center">      
       <ul class="hidden lg:flex flex-row justify-between items-center p-4 gap-10 text-[12px]">
         <li><a href="#" class="hover:text-[#9095a7]">Pricing</a></li>
         <li><a href="#" class="hover:text-[#9095a7]">Products</a></li>
@@ -29,25 +34,39 @@
       </ul>
     </div>
     <!-- get started button -->
-    <div>
-      <button type="button" class="hidden lg:block bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 rounded hover:opacity-50 rounded-3xl cursor-pointer transition duration-300 ease-in-out">
+    <div class="w-[15%]">
+      <button type="button" class="hidden  lg:block bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 rounded hover:bg-[#f9b199] hover: rounded-3xl cursor-pointer transition duration-300 ease-in-out">
         Get Started
       </button>
     </div>
+    <!-- hamburger icon -->
+    <div class="lg:hidden flex justify-center items-center">
+      <img id="hamburgerIcon" src="" alt="Hamburger Icon" class="w-10 h-6 cursor-pointer">
+    </div>
   </nav>
    <!-- charts section -->
-    <section class="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row-reverse justify-between items-center gap-2 mt-36 mb-16">
+    <section class="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row-reverse justify-between items-center gap-2 mt-32 mb-16">
     <!-- 1st part -->
-    <div class="w-full md:w-[40%] flex flex-col items-center">
+    <div class="w-full md:w-[40%] flex flex-col items-center  z-20">
         <img src="./images/illustration-intro.svg" alt="Chart Icon" class="w-full h-full"/>
     </div>
     <!-- second part -->
       <div class="w-full md:w-[40%] flex flex-col items-center md:items-start gap-4 text-center md:text-left ">
       <p class="text-4xl font-[700]">Bring everyone together to build better products.</p>
       <p class="leading-7 text-[#9095a7]">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
-      <button type="button" class="bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 mt-6 rounded hover:opacity-50 rounded-3xl cursor-pointer transition duration-300 ease-in-out">
+      <button type="button" class="bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 mt-6 rounded hover:bg-[#f9b199] rounded-3xl cursor-pointer transition duration-300 ease-in-out">
           Get Started
       </button>
+      </div>
+      <!-- menu -->
+      <div id="menu" class="hidden absolute top-28 left-5 w-[90%] bg-white shadow-lg rounded-lg">
+        <ul class="flex flex-col justify-center p-4">
+          <li><a href="#" class="block py-2 hover:bg-gray-100">Pricing</a></li>
+          <li><a href="#" class="block py-2 hover:bg-gray-100">Products</a></li>
+          <li><a href="#" class="block py-2 hover:bg-gray-100">About Us</a></li>
+          <li><a href="#" class="block py-2 hover:bg-gray-100">Careers</a></li>
+          <li><a href="#" class="block py-2 hover:bg-gray-100">Community</a></li>
+        </ul>
       </div>
   </section>
 
@@ -66,8 +85,8 @@
     </div>
     <!-- right part -->
     <div class="w-full md:w-[45%] flex flex-col items-center md:items-start gap-8">
-      <div>
-        <div class="flex flex-row justify-start gap-4">
+      <div class="flex flex-col gap-4 ">
+        <div class="flex flex-row justify-start gap-4 bg-[#ffefeb] md:bg-none">
           <div class="flex justify-center items-center bg-[#f25f3a] text-white rounded-3xl w-16 h-10">01</div>
           <p class="flex justify-center items-center text-[14px] text-black font-[500]">
             Track company-wide progress
@@ -79,8 +98,8 @@
   smallest of details. Never lose sight of the bigger picture again.
          </p>
       </div>
-      <div>
-        <div class="flex flex-row justify-start gap-4">
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-row justify-start gap-4 bg-[#ffefeb] md:bg-none">
           <div class="flex justify-center items-center bg-[#f25f3a] text-white rounded-3xl w-16 h-10">02</div>
           <p class="flex justify-center items-center text-[14px] text-black font-[500]">
              Advanced built-in reports
@@ -91,8 +110,8 @@
   goals. Our customisable dashboard helps you build out the reports 
   you need to keep key stakeholders informed.
       </div>
-      <div>
-        <div class="flex flex-row justify-start gap-4">
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-row justify-start gap-4 bg-[#ffefeb] md:bg-none">
           <div class="flex justify-center items-center bg-[#f25f3a] text-white rounded-3xl w-16 h-10">03</div>
           <p class="flex justify-center items-center text-[14px] text-black font-[500]">
               Everything you need in one place
@@ -115,27 +134,27 @@
       <div id="mainTestimonials" class="w-full md:w-3/4 lg:w-[280px] h-44 mx-auto px-2  py-auto flex flex-col items-center gap-2 leading-6  bg-[#f8f9ff] overflow-visible">
         <img id="avatar" src="./images/avatar-anisha.png" alt="Anisha" class="relative -top-8 size-16 rounded-full z-20">
         <p id="name" class="relative -top-8">Anisha Li</p>
-        <p id="desc" class="relative -top-8 text-[12px] text-center text-[#9095a7]">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+        <p id="desc" class="relative -top-8 text-[14px] text-center text-[#9095a7]">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
       </div>
       <!-- Richard -->
       <div class="w-full lg:w-[280px] h-44 hidden px-2  py-auto lg:flex flex-col items-center gap-2 leading-6  bg-[#f8f9ff] overflow-visible">
         <img src="./images/avatar-richard.png" alt="Richard" class="relative -top-8 size-16 rounded-full">
         <p class="relative -top-8">Richard Watts</p>
-        <p class="relative -top-8 text-[12px] text-center text-[#9095a7]"> “Manage allows us to provide structure and process. It keeps us organized 
+        <p class="relative -top-8 text-[14px] text-center text-[#9095a7]"> “Manage allows us to provide structure and process. It keeps us organized 
   and focused. I can’t stop recommending them to everyone I talk to!”</p>
     </div>
     <!-- Shani -->
     <div class="w-full lg:w-[280px] h-44 hidden  px-2 py-auto lg:flex flex-col items-center gap-2  leading-6 bg-[#f8f9ff] overflow-visible">
       <img src="./images/avatar-shanai.png" alt="Shanai" class="relative -top-8 size-16 rounded-full">
       <p class="relative -top-8">Shanai Gough</p>
-      <p class=" relative -top-8 text-[12px] text-center text-[#9095a7]">“Their software allows us to track, manage and collaborate on our projects 
+      <p class=" relative -top-8 text-[14px] text-center text-[#9095a7]">“Their software allows us to track, manage and collaborate on our projects 
   from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
     </div>
     <!-- Ali -->
     <div class="w-full lg:w-[280px] h-44 hidden px-2  py-auto lg:flex flex-col items-center gap-2 leading-6  bg-[#f8f9ff] overflow-visible">
       <img src="./images/avatar-ali.png" alt="Ali" class="relative -top-8 size-16 rounded-full">
       <p class="relative -top-8">Ali Bravo</p>
-      <p class="relative -top-8 text-[12px] text-center text-[#9095a7]">“We have been able to cancel so many other subscriptions since using 
+      <p class="relative -top-8 text-[14px] text-center text-[#9095a7]">“We have been able to cancel so many other subscriptions since using 
   Manage. There is no more cross-channel confusion and everyone is much 
   more focused.”</p>
     </div>
@@ -148,7 +167,7 @@
         <div class="w-2 h-2 border border-[#f25f3a] rounded-full "></div>
      </div>
      <div class="w-full flex flex-row justify-center items-center gap-4 mt-12">
-      <button type="button" class="bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 rounded hover:opacity-50 rounded-3xl cursor-pointer transition duration-300 ease-in-out">
+      <button type="button" class="bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 rounded hover:bg-[#f9b199] rounded-3xl cursor-pointer transition duration-300 ease-in-out">
         Get Started
       </button>
     </div>
@@ -156,55 +175,60 @@
 
   <!-- section simplify -->
  <section class="w-full flex flex-col md:flex-row justify-between items-center py-12 px-[10%] bg-[#f25f3a] gap-6">
-  <p class="lg:w-[50%] text-3xl lg:text-4xl text-center md:text-left text-white font-[700]">
+  <p class="md:w-[75%] lg:w-[50%] text-3xl lg:text-4xl text-center md:text-left text-white font-[700]">
       Simplify how your team works today.
   </p>
-  <button type="button" class="bg-white text-[#f25f3a] text-sm font-[400] px-4 py-2 rounded hover:text-[#ffefeb] rounded-3xl cursor-pointer transition duration-300 ease-in-out">
+  <button type="button" class="w-auto bg-white text-[#f25f3a] text-sm font-[400] px-4 py-2 rounded hover:text-[#f9b199] rounded-3xl cursor-pointer transition duration-300 ease-in-out">
         Get Started
       </button>
  </section>
 
  <!-- footer -->
-  <footer class="w-full h-52 flex flex-col md:flex-row justify-between items-center gap-4 bg-[#1d1e25] text-[#9095a7] text-[12px] px-[10%] py-12">
-    <div class="h-full flex flex-col justify-between">
-      <img src="./images/logo-white.svg" />
+  <footer class="w-full h-auto flex flex-col-reverse md:flex-row justify-between items-center gap-10 md:gap-10 bg-[#1d1e25] text-[#9095a7] text-[12px] px-[10%] py-12">
+    <div class="h-auto md:h-32 flex flex-col-reverse  md:flex-col justify-between gap-10">
+      <p class="w-full flex justify-center items-center text-[14px] md:hidden">Copyright 2025. All Rights Reserved</p>
+      <img src="./images/logo-white.svg" class="w-40 mx-auto" />
       <!-- Social media icons -->
       <div>
-        <img id="icon-facebook" src="./images/icon-facebook.svg" alt="Facebook Icon" class="size-4 inline-block mx-2 cursor-pointer">
-        <img id="icon-youtube" src="./images/icon-youtube.svg" alt="YouTube Icon" class="size-4 inline-block mx-2 cursor-pointer">
-        <img id="icon-twitter" src="./images/icon-twitter.svg" alt="Twitter Icon" class="size-4 inline-block mx-2 cursor-pointer ">
-        <img id="icon-pinterest" src="./images/icon-pinterest.svg" alt="Pinterest Icon" class="size-4 inline-block mx-2 cursor-pointer">
-        <img id="icon-instagram" src="./images/icon-instagram.svg" alt="Instagram Icon" class="size-4 inline-block mx-2 cursor-pointer ">
-      </div>
+        <img id="icon-facebook" src="./images/icon-facebook.svg" alt="Facebook Icon" class="size-8 md:size-4 inline-block mx-2 cursor-pointer">
+        <img id="icon-youtube" src="./images/icon-youtube.svg" alt="YouTube Icon" class="size-8 md:size-4 inline-block mx-2 cursor-pointer">
+        <img id="icon-twitter" src="./images/icon-twitter.svg" alt="Twitter Icon" class="size-8 md:size-4 inline-block mx-2 cursor-pointer ">
+        <img id="icon-pinterest" src="./images/icon-pinterest.svg" alt="Pinterest Icon" class="size-8 md:size-4 inline-block mx-2 cursor-pointer">
+        <img id="icon-instagram" src="./images/icon-instagram.svg" alt="Instagram Icon" class="size-8 md:size-4 inline-block mx-2 cursor-pointer ">
+      </div>      
     </div>
-    <div class="w-full h-full md:w-[33%] flex flex-row justify-between">
-      <div class="flex flex-col justify-between">
+    <div class="w-full h-auto md:h-32 md:w-[40%] flex flex-row justify-between text-[14px]">
+      <div class="h-auto flex flex-col gap-4 justify-between">
         <span class="hover:text-[#f25f3a] cursor-pointer">Home</span>
         <span class="hover:text-[#f25f3a] cursor-pointer">Pricing</span>
         <span class="hover:text-[#f25f3a] cursor-pointer">Products</span>
         <span class="hover:text-[#f25f3a] cursor-pointer">About Us</span>
       </div>
-      <div class="flex flex-col justify-between">
+      <div class="h-fit flex flex-col gap-4 justify-between">
         <span class="hover:text-[#f25f3a] cursor-pointer">Careers</span>
         <span class="hover:text-[#f25f3a] cursor-pointer">Community</span>
         <span class="hover:text-[#f25f3a] cursor-pointer">Privacy Policy</span>
       </div>
     </div>
-    <div class="h-full flex flex-col justify-between">
-      <div class="flex flex-row justify-end gap-2">
-        <input type="email" placeholder="Updates in your inbox…" class="w-64 h-10 px-4 rounded-3xl bg-white text-[#9095a7] focus:outline-none">
-        <button type="button" class="bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 rounded-3xl hover:opacity-50 cursor-pointer transition duration-300 ease-in-out">
-          Go
-        </button>
+    <div class="h-auto md:h-32 flex flex-col justify-between">
+        <div class="flex flex-col justify-start gap-1">
+          <div class="flex flex-row justify-end gap-2">
+          <input id="emailInput" type="email" placeholder="Updates in your inbox…" class="w-48 h-10 px-4 rounded-3xl bg-white text-[#9095a7] focus:outline-none">
+          <button id="goButton" type="button" class="w-16 bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 rounded-3xl hover:bg-[#f9b199] cursor-pointer transition duration-300 ease-in-out">
+            Go
+          </button>       
+        </div>
+        <p id="emailError" class="text-[#f25f3a] hidden ml-2">Insert valid email</p>
       </div>
-      <p class="w-full flex justify-end items-center">Copyright 2025. All Rights Reserved</p>
+      
+      <p class="hidden w-full md:flex justify-end items-center">Copyright 2025. All Rights Reserved</p>
     </div>
 
   </footer>
-  <div class="attribution">
+  <!-- <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Bahaa Salaheldin</a>.
-      </div>
+    </div> -->
   
   <script src="./index.js"></script>
 </body>
