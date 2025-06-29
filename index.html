@@ -17,13 +17,15 @@
 </head>
 <body class="w-full h-full font-[Be_Vietnam_Pro] overflow-x-hidden">
   <!-- bg-tablet-pattern -->
-  <img src="./images/bg-tablet-pattern.svg" class="w-full md:w-1/2 2xl:w-[25%]  h-auto absolute 
-  -top-10 md:-top-0 lg:-top-20 xl:-top-64
-  left-[15%] md:left-[55%] xl:left-[60%] z-10"/>
+  <img aria-hidden="true" src="./images/bg-tablet-pattern.svg" class="w-full md:w-1/2 2xl:w-[25%]  h-auto absolute 
+  -top-10 md:top-0 lg:-top-20 xl:-top-64
+  left-[15%] md:left-[60%] xl:left-[70%] z-10"/>
 
-  <img src="./images/bg-tablet-pattern.svg" class="w-auto h-auto absolute top-[40%] left-[60%]" style="z-index: 10;"/>
+  <img src="./images/bg-tablet-pattern.svg" class="w-full md:w-1/2 h-1/2 2xl:w-1/2  h-auto absolute 
+  top-[450px] md:top-3/4 lg:top-[800px]
+  -right-1/2 md:-left-[25%] lg:-left-[25%] z-10"/>
 
-  <nav class="absolute top-6 left-[5%] md:left-[10%] w-[90%] md:w-[80%] h-16 flex flex-row justify-between items-center z-20" >
+  <nav class="absolute top-6 left-[5%] md:left-[10%] w-[90%] md:w-[80%] h-16 flex flex-row justify-between items-center z-30" >
     <!-- logo and links -->
     <div>
     <img src="./images/logo.svg" alt="Manage Logo" class="w-36 h-5"/>
@@ -39,7 +41,7 @@
     </div>
     <!-- get started button -->
     <div class="w-[15%]">
-      <button type="button" class="hidden  lg:block bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 rounded hover:bg-[#f9b199] hover: rounded-3xl cursor-pointer transition duration-300 ease-in-out">
+      <button type="button" class="hidden  lg:block bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 rounded shadow-xl hover:bg-[#f9b199] hover: rounded-3xl cursor-pointer transition duration-300 ease-in-out">
         Get Started
       </button>
     </div>
@@ -59,16 +61,16 @@
     </ul>
   </div>
    <!-- charts section -->
-    <section class="w-[90%] md:w-[80%] lg:h-88 mx-auto flex flex-col md:flex-row-reverse justify-between gap-2 md:gap-1 mt-28 md:mt-36 mb-16 z-20">
+    <section class="w-[90%] md:w-[80%] lg:h-88 mx-auto flex flex-col md:flex-row-reverse justify-between gap-2 md:gap-1 mt-28 md:mt-36 mb-16 z-30">
     <!-- 1st part -->
     <div class="w-full md:w-[45%] flex flex-col items-center z-20">
         <img src="./images/illustration-intro.svg" alt="Chart Icon" class="w-full h-96"/>
     </div>
     <!-- second part -->
-    <div class="w-full md:w-[45%] flex flex-col justify-center items-center md:items-start gap-6 text-center md:text-left ">
+    <div class="w-full md:w-[45%] flex flex-col justify-center items-center md:items-start gap-6 text-center md:text-left z-20">
       <p class="text-3xl lg:text-4xl font-[700]">Bring everyone together to build better products.</p>
       <p class="leading-7 text-[#9095a7]">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
-      <button type="button" class="bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 mt-6 rounded hover:bg-[#f9b199] rounded-3xl cursor-pointer transition duration-300 ease-in-out">
+      <button type="button" class="bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 mt-6 rounded shadow-xl hover:bg-[#f9b199] rounded-3xl cursor-pointer transition duration-300 ease-in-out">
           Get Started
       </button>
     </div>
@@ -76,9 +78,9 @@
   </section>
 
   <!-- section  -->
-   <section class="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row justify-between gap-4 my-16" style="z-index:20">
+   <section class="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row justify-between gap-4 my-16 z-30">    
     <!-- left part -->
-    <div class="w-full md:w-[45%] flex flex-col items-center md:items-start gap-4 text-center md:text-left">
+    <div class="w-full md:w-[45%] flex flex-col items-center md:items-start gap-4 text-center md:text-left z-20">
       <p class="w-[90%] md:w-full mx-auto text-3xl font-[700]">
         What’s different about Manage?
       </p>
@@ -89,7 +91,7 @@
       </p>
     </div>
     <!-- right part -->
-    <div class="w-full md:w-[45%] flex flex-col items-center md:items-center gap-8">
+    <div class="w-full md:w-[45%] flex flex-col items-center md:items-center gap-8 z-20">      
       <div class="flex flex-col gap-4 ">
         <div class="flex flex-row justify-start gap-4 bg-[#ffefeb] md:bg-transparent">
           <div class="flex justify-center items-center bg-[#f25f3a] text-white rounded-3xl w-16 h-10">01</div>
@@ -133,8 +135,8 @@
 
    <!-- testimonials  -->
   <section class="w-[90%] xl:w-[80%] mx-auto my-16 z-30">
-    <h1 class="w-full text-3xl font-[700] text-center">What they’ve said</h1>
-    <div class="w-full flex flex-row justify-between gap-4 mt-16">
+    <h1 class="w-full text-3xl font-[700] text-center z-20">What they’ve said</h1>
+    <div class="w-full flex flex-row justify-between gap-4 mt-16 z-20">
        <!-- Anisha -->
       <div id="mainTestimonials" class="w-full md:w-3/4 lg:w-[280px] h-44 mx-auto px-2  py-auto flex flex-col items-center gap-2 leading-6  bg-[#f8f9ff] overflow-visible">
         <img id="avatar" src="./images/avatar-anisha.png" alt="Anisha" class="relative -top-8 size-16 rounded-full z-20">
@@ -172,20 +174,21 @@
         <div class="w-2 h-2 border border-[#f25f3a] rounded-full "></div>
      </div>
      <div class="w-full flex flex-row justify-center items-center gap-4 mt-12">
-      <button type="button" class="bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 rounded hover:bg-[#f9b199] rounded-3xl cursor-pointer transition duration-300 ease-in-out">
+      <button type="button" class="bg-[#f25f3a] text-white text-sm font-[400] px-4 py-2 rounded shadow-xl hover:bg-[#f9b199] rounded-3xl cursor-pointer transition duration-300 ease-in-out">
         Get Started
       </button>
     </div>
   </section>
 
   <!-- section simplify -->
- <section class="w-full flex flex-col md:flex-row justify-between items-center py-12 px-[10%] bg-[#f25f3a] gap-6 z-20">
+ <section class="relative w-full flex flex-col md:flex-row justify-between items-center py-12 px-[10%] bg-[#f25f3a] gap-6 z-20">
   <p class="md:w-[75%] lg:w-[50%] text-3xl lg:text-4xl text-center md:text-left text-white font-[700]">
       Simplify how your team works today.
   </p>
-  <button type="button" class="w-auto bg-white text-[#f25f3a] text-sm font-[400] px-4 py-2 rounded hover:text-[#f9b199] rounded-3xl cursor-pointer transition duration-300 ease-in-out">
+  <button type="button" class="w-auto bg-white text-[#f25f3a] text-sm font-[400] px-4 py-2 rounded shadow-xl hover:text-[#f9b199] rounded-3xl cursor-pointer transition duration-300 ease-in-out">
         Get Started
-      </button>
+  </button>
+  <img src="./images/bg-simplify-section-desktop.svg" alt="Simplify Illustration" class="w-full absolute top-0 left-1/2 h-full md:w-[40%] lg:w-[30%] z-10 border- border-black">
  </section>
 
  <!-- footer -->
