@@ -127,7 +127,12 @@ hamburgerIcon.addEventListener('click', () => {
     menu.classList.toggle('hidden');
     if(hamburgerIcon.getAttribute('src') === './images/icon-hamburger.svg') {
         hamburgerIcon.setAttribute('src','./images/icon-close.svg');
+        hamburgerIcon.classList.add('w-6','h-6');
+        // Show overlay when menu is open
+        document.getElementById('overlay').classList.remove('hidden');
     } else {
         hamburgerIcon.setAttribute('src','./images/icon-hamburger.svg');
+        // Hide overlay when menu is closed
+        document.getElementById('overlay').classList.add('hidden');
     }
 });
