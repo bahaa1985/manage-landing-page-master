@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -11,19 +11,26 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    /* * {
+  outline: 1px solid red;
+} */
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body class="w-full h-full font-[Be_Vietnam_Pro] overflow-x-hidden">
   <!-- bg-tablet-pattern -->
-  <img aria-hidden="true" src="./images/bg-tablet-pattern.svg" class="w-full md:w-1/2 2xl:w-[25%]  h-auto absolute 
-  -top-10 md:top-0 lg:-top-20 xl:-top-64
-  left-[15%] md:left-[60%] xl:left-[70%] z-10 overflow-x-hidden"/>
+  <img 
+  aria-hidden="true"
+  src="./images/bg-tablet-pattern.svg"
+  class="absolute w-[700px] md:w-[300px] md:h-[600px] lg:w-[500px] 2xl:w-[500px] h-auto -top-20 md:-top-40 lg:-top-44 left-1/2 -translate-x-1/2 md:left-3/4 lg:right-[-300px] xl:right-[-400px] z-10 pointer-events-none"
+/>
 
-  <img src="./images/bg-tablet-pattern.svg" class="w-full md:w-1/2 h-1/2 2xl:w-1/2  h-auto absolute 
-  top-[450px] md:top-3/4 lg:top-[800px]
-  -right-1/2 md:-left-[25%] lg:-left-[25%] z-10 overflow-x-hidden"/>
+<img 
+  src="./images/bg-tablet-pattern.svg"
+  class="absolute w-[700px] md:w-[600px] 2xl:w-[500px] h-auto top-[450px] md:top-[600px] lg:top-[800px] left-1/2 -translate-x-[50%] md:left-0 lg:-left-0 z-10 pointer-events-none"
+/>
+
 
   <nav class="absolute top-6 left-[5%] md:left-[10%] w-[90%] md:w-[80%] h-16 flex flex-row justify-between items-center z-30" >
     <!-- logo and links -->
